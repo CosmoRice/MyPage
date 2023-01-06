@@ -1,66 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2023 Bucket List</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nokora&display=swap');
-        * {
-            font-family: 'Nokora', sans-serif;
-        }
-        .title {
-            color: white;
-            background-color: tomato;
-            font-size: 24px;
-            padding: 8px 14px;
-            border-radius: 8px;
-        }
+        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="CosmoRice">
+        <meta property="og:description" content="Digital Artist taking the journey with little Rice">
+        <meta property="og:image" content="cosmorice.jpg">
+        <title>CosmoRice - Profile Page</title>
+        <Style>
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                font-family: "Pretendard",serif;
+            }
+            body {
+                background-color: 	#6868AC;
+                }
+                .profile {
+                    width: 100px;
+                    height: 100px;
 
-        .bg {
-            width: 360px;
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
-        }
+                    border-radius: 100%;
 
-        .message {
-            font-weight: bold;
-            color: tomato;
-        }
+                    border: 2px solid white;
 
-        .bucket {
-            width: 160px;
-            height: 160px;
-        }
+                    background-image: url('face.jpg');
+                    background-position: center;
+                    background-size: cover;
+                }
 
-        .img1 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
-            background-size: cover;
-            background-position: center;
-        }
+                .main { 
+                    color: white;
+                    font-size: 20px;
 
-        .img2 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
-    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
-</head>
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                }
 
-<body class="bg center">
-    <h1 class="title">2023 PLAN</h1>
-    <p class="message">Life coaching by the Holy Spirit!</p>
-    <div class="row flex-row wrap">
-        <div class="bucket img1 center">Be Spiritual</div>
-        <div class="bucket img2 center">Pivot to IT</div>
-        <div class="bucket img2 center">Learn SQL</div>
-        <div class="bucket img1 center">Second Job</div>
-        <div class="bucket img1 center">Work Out</div>
-        <div class="bucket img2 center">Change Lifestyle</div>
-    </div>
+            .sub {
+                color: white;
+                font-size: 14px;
 
-</body>
+                margin-top: 0px;
+                margin-bottom: 30px;
+                
 
+            }
+            .wrap {
+                width: 300px;
+                margin: 30px auto 0px auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .wrap > a {
+                width: 300px;
+                height: 50px;
+
+                background-color: white;
+                border-radius: 8px;
+
+                margin-bottom: 10px;
+
+                font-size: 14px;
+                font-weight: bold;
+                color: #6868AC;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                text-decoration: none;
+
+                box-shadow: 3px 3px 5px 0px black;
+            }
+
+            .wrap > a:hover {
+                font-size: 15px;
+            }
+        </Style>
+    </head>
+    <body>
+        <!-- 우리가 웹페이지에서 볼 수 있는 부분을 세팅하는 곳이죠.
+             우리가 집에서 눈에 볼 수 있는 집 구조들을 설정하는 곳이죠.-->
+             <div class="wrap">
+                <div class="profile"></div>
+                <h1 class="main">CosmoRice</h1>
+                <p class="sub">Digital Artist taking the journey with little Rice!</p>
+                <a target="_blank" href="https://www.instagram.com/cosmo_rice/">Instagram</a>
+                <a target="_blank" href="https://opensea.io/CosmoRice">OpenSea</a>
+                <a target="_blank" href="https://opensea.io/collection/cosmoricemyface">MyFace Project</a>
+             </div>
+
+    </body>
 </html>
